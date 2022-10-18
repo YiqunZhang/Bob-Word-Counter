@@ -13,7 +13,7 @@
             "identifier": "model",
             "type": "menu",
             "title": "显示模式",
-            "defaultValue": "1",
+            "defaultValue": "2",
             "menuValues": [
                 {
                     "title": "完整模式",
