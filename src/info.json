@@ -1,6 +1,6 @@
 {
     "identifier": "io.yiqun.bob-word-counter",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "category": "translate",
     "name": "字词数统计",
     "summary": "统计词数和字数的插件",
