@@ -50,10 +50,19 @@ function translate(query, completion) {
 
     d.wd=d.enwords+d.cn;
 
-    result = {
-        'toParagraphs': [
-            "中文" + d.cn + "字  英文" + d.enwords + "词  总计" + (d.cn + d.enwords) + "字词"
-        ]
+    if ($option.model == 1){
+        result = {
+            'toParagraphs': [
+                `中文 ${d.cn} 字\r英文 ${d.enwords} 词\r总计 ${d.enwords+d.cn} 字词\r\r总字符数: ${d.totals-d.lines}\r总字符数(不含空白): ${d.totals-d.blank-d.lines}\r空白字符数: ${d.blank}\r英文字符数: ${d.en}\r标点符号数: ${d.marks}\r其它字符数: ${d.totals-d.en-d.blank-d.cn-d.lines-d.marks}\r`
+
+            ]
+        }
+    }else{
+        result = {
+            'toParagraphs': [
+                "中文" + d.cn + "字  英文" + d.enwords + "词  总计" + (d.cn + d.enwords) + "字词"
+            ]
+        }
     }
 
     completion({'result': result});
