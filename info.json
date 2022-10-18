@@ -2,7 +2,7 @@
     "identifier": "io.yiqun.bob-word-counter",
     "version": "0.1.0",
     "category": "translate",
-    "name": "TEST",
+    "name": "字词数统计",
     "summary": "统计词数和字数的插件",
     "author": "Junyi Li and Yiqun Zhang",
     "homepage": "https://github.com/YiqunZhang/Bob-Word-Counter",
